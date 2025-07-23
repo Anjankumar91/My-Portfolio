@@ -64,8 +64,8 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="text-center mb-16 animate-popup">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-glow-pulse">
             🚀 Featured Projects
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -75,39 +75,43 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="group shadow-3d hover:shadow-glow transition-all duration-500 hover:-translate-y-3 hover:scale-105 bg-card/70 backdrop-blur-sm border border-border/50">
+            <Card key={index} className={`group shadow-popup hover:shadow-glow-intense animate-popup transition-all duration-700 hover:-translate-y-6 hover:scale-110 bg-card/70 backdrop-blur-sm border border-border/50 ${
+              index % 3 === 0 ? 'animate-glow-pulse' : 
+              index % 3 === 1 ? 'animate-glow-accent-pulse' : 
+              'animate-float'
+            }`} style={{ animationDelay: `${index * 0.1}s` }}>
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
-                  <div className="text-4xl">{project.image}</div>
-                  <Badge variant="secondary" className="text-xs">
+                  <div className="text-4xl transform group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-float">{project.image}</div>
+                  <Badge variant="secondary" className="text-xs transform group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-300 shadow-glow">
                     {project.category}
                   </Badge>
                 </div>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                <CardTitle className="text-xl group-hover:text-primary transition-colors transform group-hover:scale-105 duration-300">
                   {project.title}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">
                   {project.description}
                 </p>
                 
                 <div className="flex flex-wrap gap-1">
                   {project.techStack.map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="outline" className="text-xs">
+                    <Badge key={techIndex} variant="outline" className="text-xs transform hover:scale-110 hover:-translate-y-1 hover:shadow-glow transition-all duration-300">
                       {tech}
                     </Badge>
                   ))}
                 </div>
                 
                 <div className="flex gap-2 pt-2">
-                  <Button size="sm" variant="outline" asChild>
+                  <Button size="sm" variant="outline" asChild className="transform hover:scale-110 hover:-translate-y-2 hover:shadow-glow transition-all duration-300">
                     <a href={project.github}>
                       <Github className="w-4 h-4" />
                       Code
                     </a>
                   </Button>
-                  <Button size="sm" variant="emerald" asChild>
+                  <Button size="sm" variant="emerald" asChild className="transform hover:scale-110 hover:-translate-y-2 hover:shadow-glow-accent transition-all duration-300">
                     <a href={project.demo}>
                       <ExternalLink className="w-4 h-4" />
                       Demo
@@ -119,8 +123,8 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button size="lg" variant="gradient">
+        <div className="text-center mt-12 animate-popup" style={{ animationDelay: '0.6s' }}>
+          <Button size="lg" variant="gradient" className="shadow-glow-intense hover:shadow-popup transform hover:scale-110 hover:-translate-y-3 transition-all duration-500 animate-glow-pulse">
             <Github className="w-5 h-5" />
             View All Projects on GitHub
           </Button>
