@@ -123,7 +123,9 @@ export default {
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
 				'glow': 'var(--shadow-glow)',
-				'card': 'var(--shadow-card)'
+				'card': 'var(--shadow-card)',
+				'3d': 'var(--shadow-3d)',
+				'inset': 'var(--shadow-inset)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)'

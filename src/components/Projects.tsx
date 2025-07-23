@@ -75,7 +75,7 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="group shadow-card hover:shadow-glow transition-all duration-300 hover:-translate-y-2">
+            <Card key={index} className="group shadow-3d hover:shadow-glow transition-all duration-500 hover:-translate-y-3 hover:scale-105 bg-card/70 backdrop-blur-sm border border-border/50">
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <div className="text-4xl">{project.image}</div>

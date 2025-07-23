@@ -66,7 +66,7 @@ const Skills = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="shadow-card hover:shadow-glow transition-all duration-300">
+            <Card key={index} className="shadow-3d hover:shadow-glow transition-all duration-500 transform hover:-translate-y-1 hover:scale-105 bg-card/70 backdrop-blur-sm border border-border/50">
               <CardHeader>
                 <CardTitle className="text-xl">{category.title}</CardTitle>
               </CardHeader>
@@ -91,7 +91,7 @@ const Skills = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <Card className="max-w-2xl mx-auto shadow-card">
+          <Card className="max-w-2xl mx-auto shadow-3d bg-card/50 backdrop-blur-sm border border-border/50">
             <CardContent className="p-8">
               <h3 className="text-xl font-bold mb-4">🎓 Currently Learning</h3>
               <div className="flex flex-wrap gap-2 justify-center">

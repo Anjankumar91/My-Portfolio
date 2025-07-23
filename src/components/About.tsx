@@ -56,7 +56,7 @@ const About = () => {
             </div>
           </div>
 
-          <Card className="shadow-card">
+          <Card className="shadow-3d transform hover:scale-105 transition-all duration-500 bg-card/50 backdrop-blur-sm border border-border/50">
             <CardContent className="p-8">
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold">Professional Summary</h3>
