@@ -35,14 +35,19 @@ const Skills = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="shadow-3d hover:shadow-glow transition-all duration-500 transform hover:-translate-y-1 hover:scale-105 bg-card/70 backdrop-blur-sm border border-border/50">
+            <Card key={index} className={`shadow-float hover:shadow-float-hover transition-all duration-700 transform hover:-translate-y-4 hover:scale-105 bg-card/70 backdrop-blur-sm border border-border/50 perspective-1000 hover:rotate-y-2 ${
+              index % 4 === 0 ? 'animate-float' : 
+              index % 4 === 1 ? 'animate-float-slow' : 
+              index % 4 === 2 ? 'animate-float-delayed' : 
+              'animate-levitate'
+            }`}>
               <CardHeader>
-                <CardTitle className="text-xl">{category.title}</CardTitle>
+                <CardTitle className="text-xl transform transition-transform duration-300 hover:translateZ-4">{category.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
-                    <Badge key={skillIndex} variant="secondary" className="text-sm">
+                    <Badge key={skillIndex} variant="secondary" className="text-sm transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg">
                       {skill}
                     </Badge>
                   ))}
@@ -53,15 +58,15 @@ const Skills = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <Card className="max-w-2xl mx-auto shadow-3d bg-card/50 backdrop-blur-sm border border-border/50">
+          <Card className="max-w-2xl mx-auto shadow-float animate-float-slow bg-card/50 backdrop-blur-sm border border-border/50 transform hover:-translate-y-3 hover:scale-105 transition-all duration-500">
             <CardContent className="p-8">
-              <h3 className="text-xl font-bold mb-4">🎓 Currently Learning</h3>
+              <h3 className="text-xl font-bold mb-4 transform transition-transform duration-300 hover:translateZ-2">🎓 Currently Learning</h3>
               <div className="flex flex-wrap gap-2 justify-center">
-                <Badge variant="outline">Transformer Architecture</Badge>
-                <Badge variant="outline">MLOps Best Practices</Badge>
-                <Badge variant="outline">Computer Vision</Badge>
-                <Badge variant="outline">Reinforcement Learning</Badge>
-                <Badge variant="outline">Edge AI Deployment</Badge>
+                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">Transformer Architecture</Badge>
+                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">MLOps Best Practices</Badge>
+                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">Computer Vision</Badge>
+                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">Reinforcement Learning</Badge>
+                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">Edge AI Deployment</Badge>
               </div>
             </CardContent>
           </Card>
