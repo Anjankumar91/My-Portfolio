@@ -34,11 +34,10 @@ const Certifications = () => {
       skills: ["Looker/Looker Studio", "Data Visualization", "Data Analysis", "Data Transformation"]
     },
     {
-      name: "Applied Data Science with Python",
-      organization: "University of Michigan",
-      date: "2022",
-      credentialId: "UMICH-ADS-2022-654",
-      link: "#",
+      name: "AI Python for Beginners",
+      organization: "DeepLearning.AI",
+      date: "2025",
+      link: "https://learn.deeplearning.ai/accomplishments/4c2d83fb-1ff6-46e7-84ec-3f26790a7753?usp=sharing",
       skills: ["Python", "Pandas", "Matplotlib", "Scikit-learn"]
     },
     {
