@@ -17,14 +17,13 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto text-center animate-popup transform perspective-1000 shadow-popup hover:shadow-glow-intense transition-all duration-700">
         <div className="mb-6 animate-popup" style={{ animationDelay: '0.2s' }}>
           <Badge variant="secondary" className="mb-4 text-sm animate-glow-pulse">
-            🤖 AI & Machine Learning Engineer
+            🤖 The Mind Behind the Machine that Understands Data
           </Badge>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent animate-popup" style={{ animationDelay: '0.4s' }}>
-            Building the Future with AI
+            I speak in code, so machines can understand data.
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed animate-popup" style={{ animationDelay: '0.6s' }}>
-            Passionate about Generative AI, Deep Learning, and creating intelligent solutions 
-            that transform how we interact with technology.
+            Not a coder. Not a scientist. Just someone who teaches machines how to think.
           </p>
         </div>
         
