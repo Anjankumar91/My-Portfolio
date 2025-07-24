@@ -6,36 +6,32 @@ import { Award, ExternalLink, Calendar } from "lucide-react";
 const Certifications = () => {
   const certifications = [
     {
-      name: "Machine Learning Engineering Professional",
+      name: "Google Cloud Data Analytics Certificate",
       organization: "Google Cloud",
       date: "2024",
-      credentialId: "GCP-MLE-2024-001",
-      link: "#",
-      skills: ["TensorFlow", "Vertex AI", "MLOps"]
+      link: "https://www.credly.com/badges/413811e7-c88c-4c74-9f6d-f8dd4e1e5b72",
+      skills: ["Business Intelligence", "Data Anlaysis", "Data Modeling", "Data Visualization", "Data Transformation", "Google Cloud"]
     },
     {
-      name: "AWS Certified Machine Learning - Specialty",
-      organization: "Amazon Web Services",
-      date: "2023",
-      credentialId: "AWS-MLS-2023-456",
-      link: "#",
-      skills: ["SageMaker", "Deep Learning", "AI Services"]
+      name: "Google Cloud Computing Foundations Certificate",
+      organization: "Google Cloud",
+      date: "2024",
+      link: "https://www.credly.com/badges/4473b9fa-73f3-4c6a-923a-1e023f9c2f11",
+      skills: ["Google Cloud", "Cloud Foundations", "Cloud Computing", "Data & ML", "Cloud Storage"]
     },
     {
-      name: "Deep Learning Specialization",
-      organization: "DeepLearning.AI",
-      date: "2023",
-      credentialId: "DL-SPEC-2023-789",
-      link: "#",
-      skills: ["Neural Networks", "CNN", "RNN", "Transformers"]
+      name: "Postman API Fundamentals Student Expert",
+      organization: "Postman",
+      date: "2025",
+      link: "https://badgr.com/public/assertions/PpV8sqzLTSiwrm3AZe-NkQ?identity__email=venkatanjan91%40gmail.com",
+      skills: ["API", "Testing", "Scripting", "Postman"]
     },
     {
-      name: "TensorFlow Developer Certificate",
-      organization: "Google",
-      date: "2023",
-      credentialId: "TF-DEV-2023-321",
-      link: "#",
-      skills: ["TensorFlow", "Keras", "Computer Vision", "NLP"]
+      name: "Looker for Data Visualization-Beginners and Professionals",
+      organization: "Udemy",
+      date: "2025",
+      link: "https://www.udemy.com/certificate/UC-3afd7f55-b5ea-4495-8228-84e07f1757ca/",
+      skills: ["Looker/Looker Studio", "Data Visualization", "Data Analysis", "Data Transformation"]
     },
     {
       name: "Applied Data Science with Python",
