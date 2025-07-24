@@ -38,7 +38,7 @@ const Contact = () => {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
       username: "Venkatanjan91",
-      link: "#",
+      link: "https://github.com/Venkatanjan91",
       color: "hover:text-gray-900"
     },
     {
