@@ -64,7 +64,7 @@ const Certifications = () => {
             🏆 Certifications
           </h2>
           <p className="text-lg text-muted-foreground">
-            Professional credentials validating expertise in AI and machine learning
+            Certified in AI, ML, and DATA, demonstrating validated expertise and continuous skill growth.
           </p>
         </div>
 
@@ -119,11 +119,11 @@ const Certifications = () => {
         <div className="mt-12 text-center">
           <Card className="max-w-md mx-auto shadow-card">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-2">📚 Currently Pursuing</h3>
+              <h3 className="text-xl font-bold mb-2">🎓 Graduated!</h3>
               <p className="text-sm text-muted-foreground mb-4">
-                Advanced Computer Vision Specialization
+                AI and Data-Science
               </p>
-              <Badge variant="secondary">Stanford University</Badge>
+              <Badge variant="secondary">Self-Learning University</Badge>
             </CardContent>
           </Card>
         </div>
