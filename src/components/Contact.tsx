@@ -2,26 +2,26 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Linkedin, Github, Twitter, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Linkedin, Github, Phone, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: <Mail className="w-5 h-5" />,
       label: "Email",
-      value: "ai.engineer@example.com",
-      link: "mailto:ai.engineer@example.com"
+      value: "venkatanjan91@gmail.com",
+      link: "venkatanjan91@gmail.com"
     },
     {
       icon: <Phone className="w-5 h-5" />,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+91",
+      link: "tel:+919392510221"
     },
     {
       icon: <MapPin className="w-5 h-5" />,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Guntur, Andhra Pradesh",
       link: "#"
     }
   ];
@@ -30,29 +30,22 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
-      username: "@ai-engineer",
-      link: "#",
+      username: "Popuri Venkat Anjan Kumar",
+      link: "https://www.linkedin.com/in/venkat-anjan-kumar-p/",
       color: "hover:text-blue-600"
     },
     {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
-      username: "@ai-dev",
+      username: "Venkatanjan91",
       link: "#",
       color: "hover:text-gray-900"
-    },
-    {
-      icon: <Twitter className="w-6 h-6" />,
-      label: "Twitter",
-      username: "@ai_engineer",
-      link: "#",
-      color: "hover:text-blue-400"
     },
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
       username: "Get in touch",
-      link: "mailto:ai.engineer@example.com",
+      link: "venkatanjan91@gmail.com",
       color: "hover:text-red-500"
     }
   ];
@@ -167,7 +160,7 @@ const Contact = () => {
                 <div className="space-y-3 text-sm">
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-accent rounded-full"></div>
-                    <span>Full-time AI Engineer positions</span>
+                    <span>Full-time AI/ML Engineer positions</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -175,15 +168,15 @@ const Contact = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-accent-emerald rounded-full"></div>
-                    <span>Research collaborations</span>
+                    <span>Data Analyst / Data Scientist Roles</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-primary-glow rounded-full"></div>
-                    <span>Speaking opportunities</span>
+                    <span>Software Developer Roles</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-accent rounded-full"></div>
-                    <span>Open source contributions</span>
+                    <span>Generative AI Projects & Open source contribution</span>
                   </div>
                 </div>
               </CardContent>
