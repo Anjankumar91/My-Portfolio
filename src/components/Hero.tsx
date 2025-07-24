@@ -20,7 +20,7 @@ const Hero = () => {
             🤖 The Mind Behind the Machine that Understands Data
           </Badge>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent animate-popup" style={{ animationDelay: '0.4s' }}>
-            I speak in code, so machines can understand data.
+            "Code is my voice, data is the message."
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed animate-popup" style={{ animationDelay: '0.6s' }}>
             Not a coder. Not a scientist. Just someone who teaches machines how to think.
