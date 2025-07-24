@@ -63,7 +63,7 @@ const Footer = () => {
             <span>Made with</span>
             <Heart className="w-4 h-4 text-red-500" />
             <span>and AI</span>
-            <span>© 2024 AI Engineer Portfolio</span>
+            <span>© 2025 AI Engineer Portfolio</span>
           </div>
           
           <Button 
