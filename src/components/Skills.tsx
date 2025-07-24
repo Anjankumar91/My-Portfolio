@@ -17,7 +17,7 @@ const Skills = () => {
     },
     {
       title: "🛠️ Other Tools",
-      skills: ["Git/GitHub", "Jupyter Notebooks", "MLflow", "Streamlit", "AWS/GCP/Azure"]
+      skills: ["Git/GitHub", "Jupyter Notebooks", "Goolab Colab", "MLflow", "Streamlit", "AWS/GCP/Azure"]
     }
   ];
 
@@ -62,11 +62,11 @@ const Skills = () => {
             <CardContent className="p-8">
               <h3 className="text-xl font-bold mb-4 transform transition-transform duration-300 hover:translateZ-2">🎓 Currently Learning</h3>
               <div className="flex flex-wrap gap-2 justify-center">
-                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">Transformer Architecture</Badge>
-                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">MLOps Best Practices</Badge>
-                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">Computer Vision</Badge>
-                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">Reinforcement Learning</Badge>
-                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">Edge AI Deployment</Badge>
+                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">LangChain & AI Agents</Badge>
+                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">Prompt Engineering</Badge>
+                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">Streamlit Cloud + Firebase</Badge>
+                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">Python Projects</Badge>
+                <Badge variant="outline" className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-md">AI Engineering</Badge>
               </div>
             </CardContent>
           </Card>
