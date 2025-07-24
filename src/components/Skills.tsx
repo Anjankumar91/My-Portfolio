@@ -35,12 +35,12 @@ const Skills = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
-            <Card key={index} className={`shadow-float hover:shadow-float-hover transition-all duration-700 transform hover:-translate-y-4 hover:scale-105 bg-card/70 backdrop-blur-sm border border-border/50 perspective-1000 hover:rotate-y-2 ${
-              index % 4 === 0 ? 'animate-float' : 
-              index % 4 === 1 ? 'animate-float-slow' : 
-              index % 4 === 2 ? 'animate-float-delayed' : 
-              'animate-levitate'
-            }`}>
+            <Card key={index} className={`shadow-float hover:shadow-float-hover transition-all duration-700 transform hover:-translate-y-4 hover:scale-105 backdrop-blur-sm border perspective-1000 hover:rotate-y-2 animate-disco-bg ${
+              index % 4 === 0 ? 'animate-float animate-disco-lights' : 
+              index % 4 === 1 ? 'animate-float-slow animate-disco-lights' : 
+              index % 4 === 2 ? 'animate-float-delayed animate-disco-lights' : 
+              'animate-levitate animate-disco-lights'
+            }`} style={{ animationDelay: `${index * 0.3}s` }}>
               <CardHeader>
                 <CardTitle className="text-xl transform transition-transform duration-300 hover:translateZ-4">{category.title}</CardTitle>
               </CardHeader>

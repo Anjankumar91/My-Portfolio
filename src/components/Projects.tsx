@@ -75,10 +75,10 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className={`group shadow-popup hover:shadow-glow-intense animate-popup transition-all duration-700 hover:-translate-y-6 hover:scale-110 bg-card/70 backdrop-blur-sm border border-border/50 ${
-              index % 3 === 0 ? 'animate-glow-pulse' : 
-              index % 3 === 1 ? 'animate-glow-accent-pulse' : 
-              'animate-float'
+            <Card key={index} className={`group shadow-popup hover:shadow-glow-intense animate-popup transition-all duration-700 hover:-translate-y-6 hover:scale-110 backdrop-blur-sm border animate-disco-bg ${
+              index % 3 === 0 ? 'animate-disco-lights animate-float' : 
+              index % 3 === 1 ? 'animate-disco-lights animate-float-slow' : 
+              'animate-disco-lights animate-levitate'
             }`} style={{ animationDelay: `${index * 0.1}s` }}>
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">

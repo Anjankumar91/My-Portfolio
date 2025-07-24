@@ -5,11 +5,14 @@ import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-background px-6 py-20 relative overflow-hidden">
-      {/* 3D Background Elements */}
+      {/* Disco Background Elements */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl transform rotate-45 animate-glow-pulse"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl transform -rotate-12 animate-glow-accent-pulse"></div>
-        <div className="absolute top-1/3 right-1/3 w-48 h-48 bg-primary-glow/8 rounded-full blur-2xl animate-float"></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full blur-3xl transform rotate-45 animate-disco-lights animate-float"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-96 h-96 rounded-full blur-3xl transform -rotate-12 animate-disco-lights animate-float-slow" style={{ animationDelay: '0.7s' }}></div>
+        <div className="absolute top-1/3 right-1/3 w-48 h-48 rounded-full blur-2xl animate-disco-lights animate-levitate" style={{ animationDelay: '1.4s' }}></div>
+        <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-white rounded-full animate-sparkle" style={{ animationDelay: '0.3s' }}></div>
+        <div className="absolute top-1/3 left-1/3 w-1 h-1 bg-white rounded-full animate-sparkle" style={{ animationDelay: '0.8s' }}></div>
+        <div className="absolute bottom-1/4 left-3/4 w-3 h-3 bg-white rounded-full animate-sparkle" style={{ animationDelay: '1.2s' }}></div>
       </div>
       <div className="max-w-4xl mx-auto text-center animate-popup transform perspective-1000 shadow-popup hover:shadow-glow-intense transition-all duration-700">
         <div className="mb-6 animate-popup" style={{ animationDelay: '0.2s' }}>

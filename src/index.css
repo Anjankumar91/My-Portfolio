@@ -55,6 +55,16 @@ All colors MUST be HSL.
     --shadow-glow-accent: 0 0 60px hsl(var(--accent) / 0.4);
     --shadow-inset: inset 0 2px 4px hsl(0 0% 0% / 0.2);
     
+    /* Disco light colors */
+    --disco-red: 0 100% 60%;
+    --disco-blue: 240 100% 60%;
+    --disco-green: 120 100% 50%;
+    --disco-yellow: 60 100% 60%;
+    --disco-purple: 280 100% 60%;
+    --disco-cyan: 180 100% 50%;
+    --disco-orange: 30 100% 60%;
+    --disco-pink: 320 100% 60%;
+    
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
