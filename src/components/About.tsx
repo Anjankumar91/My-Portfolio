@@ -17,7 +17,7 @@ const About = () => {
             🧠 About Me
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            AI Engineer with expertise in transforming complex problems into intelligent solutions
+            I use AI to make hard problems easier to understand.
           </p>
         </div>
 
@@ -31,7 +31,7 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">AI Innovation</h3>
                   <p className="text-muted-foreground">
-                    Specialized in developing cutting-edge AI models and generative systems that push the boundaries of what's possible.
+                    I explore ideas that let machines imagine, generate, and adapt — not just compute.
                   </p>
                 </div>
               </div>
@@ -43,7 +43,7 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Technical Excellence</h3>
                   <p className="text-muted-foreground">
-                    Deep expertise in machine learning frameworks, with a focus on practical implementation and scalable solutions.
+                    I care less about the framework, more about what it solves.
                   </p>
                 </div>
               </div>
@@ -55,7 +55,7 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Future-Ready</h3>
                   <p className="text-muted-foreground">
-                    Constantly learning and adapting to the rapidly evolving AI landscape, staying ahead of emerging technologies.
+                    I stay curious, always learning and adapting to where AI is heading next.
                   </p>
                 </div>
               </div>
@@ -67,26 +67,27 @@ const About = () => {
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold animate-glow-pulse">Professional Summary</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Passionate AI Engineer with a strong foundation in machine learning, deep learning, and generative AI. 
-                  Currently focused on developing innovative solutions that bridge the gap between research and practical applications.
+                  Not just patterns in data, but meaning.
+                  Not just code, but thought.
+                  A quiet pursuit of intelligence — not to control machines,but to understand what it means to think, to learn, to evolve.
                 </p>
                 
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold mb-2">🎯 Current Focus</h4>
                     <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary" className="transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 hover:shadow-glow">Large Language Models</Badge>
-                      <Badge variant="secondary" className="transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 hover:shadow-glow">Computer Vision</Badge>
-                      <Badge variant="secondary" className="transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 hover:shadow-glow">MLOps</Badge>
-                      <Badge variant="secondary" className="transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 hover:shadow-glow">Neural Networks</Badge>
+                      <Badge variant="secondary" className="transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 hover:shadow-glow">Prompt Engineering & LLMs</Badge>
+                      <Badge variant="secondary" className="transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 hover:shadow-glow">Python & ML Frameworks</Badge>
+                      <Badge variant="secondary" className="transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 hover:shadow-glow">Generative AI Models</Badge>
+                      <Badge variant="secondary" className="transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 hover:shadow-glow">Data Analysis & Interpretation</Badge>
                     </div>
                   </div>
                   
                   <div>
                     <h4 className="font-semibold mb-2">📚 Learning Path</h4>
                     <p className="text-sm text-muted-foreground">
-                      Continuously expanding knowledge in transformer architectures, reinforcement learning, 
-                      and responsible AI development practices.
+                      Building expertise in Programming, ML Algorithms, Deep Learning Architectures, 
+                      and Deploying Scalable AI and Data-Driven Solutions.
                     </p>
                   </div>
                 </div>
