@@ -6,9 +6,9 @@ const Achievements = () => {
   const achievements = [
     {
       year: "2024",
-      title: "AI Innovation Award",
-      description: "Recognized for developing breakthrough generative AI solution that improved content creation efficiency by 300%",
-      category: "Innovation",
+      title: "🎮 Google Cloud Arcade Champion",
+      description: "Completed 70+ skill badges and earned 107+ points, showcasing hands-on expertise in AI, ML, Cloud, and Data Analytics.",
+      category: "Achievement",
       icon: <Trophy className="w-5 h-5" />
     },
     {
@@ -73,7 +73,7 @@ const Achievements = () => {
             🌟 Achievements & Recognition
           </h2>
           <p className="text-lg text-muted-foreground">
-            Milestones and recognitions in the AI/ML journey
+            Milestones and recognitions in the AI/ML and Data journey
           </p>
         </div>
 
@@ -132,15 +132,15 @@ const Achievements = () => {
               <div className="space-y-3 text-left">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-accent rounded-full"></div>
-                  <span className="text-sm">Publish 3 more research papers in top ML conferences</span>
+                  <span className="text-sm">Publish 3 research papers in AI/ML and DATA</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-sm">Launch AI startup focused on ethical AI solutions</span>
+                  <span className="text-sm">Launch an AI-powered data analytical tool</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-accent-emerald rounded-full"></div>
-                  <span className="text-sm">Contribute to 5 open-source ML projects</span>
+                  <span className="text-sm">Securing a role in a top-tier MNC</span>
                 </div>
               </div>
             </CardContent>
