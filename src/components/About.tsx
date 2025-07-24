@@ -4,10 +4,16 @@ import { Brain, Code, Zap } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-6 bg-background">
+    <section id="about" className="py-20 px-6 bg-background relative overflow-hidden">
+      {/* 3D Disco Background */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-1/4 left-1/4 w-48 h-48 rounded-full blur-3xl animate-disco-lights animate-float"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-64 h-64 rounded-full blur-3xl animate-disco-lights animate-float-slow" style={{ animationDelay: '0.8s' }}></div>
+        <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-white rounded-full animate-sparkle" style={{ animationDelay: '0.5s' }}></div>
+      </div>
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 animate-popup">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-glow-pulse">
+        <div className="text-center mb-16 animate-popup perspective-1000 transform hover:rotateX-2">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-disco-lights">
             🧠 About Me
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -56,7 +62,7 @@ const About = () => {
             </div>
           </div>
 
-          <Card className="shadow-popup hover:shadow-glow-intense animate-popup transform hover:scale-105 hover:-translate-y-4 transition-all duration-700 bg-card/50 backdrop-blur-sm border border-border/50 animate-glow-pulse" style={{ animationDelay: '0.4s' }}>
+          <Card className="shadow-popup hover:shadow-glow-intense animate-popup transform hover:scale-105 hover:-translate-y-4 transition-all duration-700 backdrop-blur-sm border perspective-1000 hover:rotateY-3 animate-disco-bg animate-disco-lights" style={{ animationDelay: '0.4s' }}>
             <CardContent className="p-8">
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold animate-glow-pulse">Professional Summary</h3>

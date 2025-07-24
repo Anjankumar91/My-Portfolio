@@ -4,10 +4,16 @@ import { FileText, Download, Eye } from "lucide-react";
 
 const Resume = () => {
   return (
-    <section id="resume" className="py-20 px-6 bg-gradient-subtle">
+    <section id="resume" className="py-20 px-6 bg-gradient-subtle relative overflow-hidden">
+      {/* 3D Disco Background */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-1/3 left-1/4 w-60 h-60 rounded-full blur-3xl animate-disco-lights animate-float"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 rounded-full blur-2xl animate-disco-lights animate-float-delayed" style={{ animationDelay: '0.8s' }}></div>
+        <div className="absolute top-1/2 left-3/4 w-2 h-2 bg-white rounded-full animate-sparkle" style={{ animationDelay: '0.2s' }}></div>
+      </div>
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="text-center mb-16 animate-popup perspective-1000 transform hover:rotateX-2">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-disco-lights">
             📄 Resume
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -17,7 +23,7 @@ const Resume = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           {/* Resume Preview */}
-          <Card className="shadow-card">
+          <Card className="shadow-card transform hover:-translate-y-4 hover:scale-105 transition-all duration-500 backdrop-blur-sm animate-disco-bg animate-disco-lights perspective-1000 hover:rotateY-2">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <FileText className="w-5 h-5" />

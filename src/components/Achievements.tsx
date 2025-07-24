@@ -60,10 +60,16 @@ const Achievements = () => {
   };
 
   return (
-    <section id="achievements" className="py-20 px-6 bg-background">
+    <section id="achievements" className="py-20 px-6 bg-background relative overflow-hidden">
+      {/* 3D Disco Background */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-1/3 right-1/4 w-56 h-56 rounded-full blur-3xl animate-disco-lights animate-float-delayed"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-40 h-40 rounded-full blur-2xl animate-disco-lights animate-levitate" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/4 left-3/4 w-1 h-1 bg-white rounded-full animate-sparkle" style={{ animationDelay: '0.6s' }}></div>
+      </div>
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="text-center mb-16 animate-popup perspective-1000 transform hover:rotateX-2">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-disco-lights">
             🌟 Achievements & Recognition
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -83,7 +89,7 @@ const Achievements = () => {
                 
                 {/* Content */}
                 <div className={`flex-1 ml-12 md:ml-0 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
-                  <Card className="shadow-card hover:shadow-glow transition-all duration-300">
+                  <Card className="shadow-card hover:shadow-glow transition-all duration-300 transform hover:-translate-y-3 hover:scale-105 backdrop-blur-sm animate-disco-bg animate-disco-lights perspective-1000 hover:rotateY-2" style={{ animationDelay: `${index * 0.2}s` }}>
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
                         <div className={`p-3 rounded-lg ${getCategoryColor(achievement.category)}`}>

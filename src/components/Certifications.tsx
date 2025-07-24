@@ -56,10 +56,16 @@ const Certifications = () => {
   ];
 
   return (
-    <section id="certifications" className="py-20 px-6 bg-gradient-subtle">
+    <section id="certifications" className="py-20 px-6 bg-gradient-subtle relative overflow-hidden">
+      {/* 3D Disco Background */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-1/4 right-1/3 w-52 h-52 rounded-full blur-3xl animate-disco-lights animate-float"></div>
+        <div className="absolute bottom-1/3 left-1/4 w-44 h-44 rounded-full blur-2xl animate-disco-lights animate-float-slow" style={{ animationDelay: '0.9s' }}></div>
+        <div className="absolute top-2/3 right-1/4 w-3 h-3 bg-white rounded-full animate-sparkle" style={{ animationDelay: '0.4s' }}></div>
+      </div>
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="text-center mb-16 animate-popup perspective-1000 transform hover:rotateX-2">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-disco-lights">
             🏆 Certifications
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -69,7 +75,7 @@ const Certifications = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {certifications.map((cert, index) => (
-            <Card key={index} className="shadow-card hover:shadow-glow transition-all duration-300">
+            <Card key={index} className="shadow-card hover:shadow-glow transition-all duration-300 transform hover:-translate-y-4 hover:scale-105 backdrop-blur-sm animate-disco-bg animate-disco-lights perspective-1000 hover:rotateY-2" style={{ animationDelay: `${index * 0.15}s` }}>
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div className="flex items-center gap-3">

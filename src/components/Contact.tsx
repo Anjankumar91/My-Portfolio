@@ -58,10 +58,16 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 px-6 bg-background">
+    <section id="contact" className="py-20 px-6 bg-background relative overflow-hidden">
+      {/* 3D Disco Background */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-1/4 left-1/3 w-48 h-48 rounded-full blur-3xl animate-disco-lights animate-levitate"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-64 h-64 rounded-full blur-3xl animate-disco-lights animate-float" style={{ animationDelay: '0.7s' }}></div>
+        <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-white rounded-full animate-sparkle" style={{ animationDelay: '0.3s' }}></div>
+      </div>
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="text-center mb-16 animate-popup perspective-1000 transform hover:rotateX-2">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-disco-lights">
             📬 Let's Connect
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -71,7 +77,7 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="shadow-card">
+          <Card className="shadow-card transform hover:-translate-y-4 hover:scale-105 transition-all duration-500 backdrop-blur-sm animate-disco-bg animate-disco-lights perspective-1000 hover:rotateY-2">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
               <form className="space-y-6">
