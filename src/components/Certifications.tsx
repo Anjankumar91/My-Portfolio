@@ -38,7 +38,7 @@ const Certifications = () => {
       organization: "DeepLearning.AI",
       date: "2025",
       link: "https://learn.deeplearning.ai/accomplishments/4c2d83fb-1ff6-46e7-84ec-3f26790a7753?usp=sharing",
-      skills: ["Python", "Pandas", "Matplotlib", "Scikit-learn"]
+      skills: ["Python", "Generative Models", "Prompting"]
     },
     {
       name: "Generative AI Fundamentals",
